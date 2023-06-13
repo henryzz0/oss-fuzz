@@ -18,7 +18,7 @@
 # When we pull base-builder to build project builder image we need to pull
 # ubuntu:16.04 anyway. So in the long run we probably would waste time if
 # we pulled something like alpine here instead.
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210416
 
 RUN apt-get update && \
     apt-get install ca-certificates wget python3 git-core --no-install-recommends -y && \
