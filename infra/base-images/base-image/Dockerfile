@@ -16,7 +16,7 @@
 
 # Base image for all other images.
 
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210114
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get upgrade -y && \
